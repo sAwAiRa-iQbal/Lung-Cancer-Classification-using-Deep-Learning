@@ -10,12 +10,6 @@ In this project, we explore several advanced CNN architectures known for their e
 - **DenseNet201**: Features dense connections between layers to enhance feature propagation and reuse, making it highly efficient.
 - **EfficientNetB4**: Balances model scaling across depth, width, and resolution, leading to improved efficiency and accuracy.
 
-## 🛠 Setup and Installation
-To replicate this project or contribute to its development, start by setting up your local environment:
-```bash
-# Clone the repository
-git clone https://github.com/yourgithubusername/Lung-Cancer-Classification-Deep-Learning.git
-
 # Navigate to the project directory
 cd Lung-Cancer-Classification-Deep-Learning
 
@@ -52,6 +46,14 @@ We encourage contributions from the community, whether it's adding new features,
 3. Commit your changes (`git commit -am 'Add some YourFeature'`).
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Create a new Pull Request.
+
+## 🛠 Setup and Installation
+To replicate this project or contribute to its development, start by setting up your local environment:
+```bash
+# Clone the repository
+git clone https://github.com/yourgithubusername/Lung-Cancer-Classification-Deep-Learning.git
+
+
 
 ## 📝 License
 This project is released under the MIT License, which allows for open and reproducible scientific research.
