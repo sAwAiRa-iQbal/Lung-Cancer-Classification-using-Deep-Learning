@@ -1,73 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lung Cancer Classification using Deep Learning</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; }
-        h1, h2 { color: #333; }
-        .content { margin: 20px; }
-        .overview, .models, .setup, .data, .findings, .technologies, .predictions, .contribute, .license, .contact {
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
-<div class="content">
-    <h1>Lung Cancer Classification using Deep Learning</h1>
-    <div class="overview">
-        <h2>🚀 Project Overview</h2>
-        <p>This repository is dedicated to the development and evaluation of deep learning models for the classification of lung cancer types from CT scan images. It utilizes advanced convolutional neural networks such as VGG19, ResNet50, DenseNet201, and EfficientNetB4.</p>
-    </div>
-    <div class="models">
-        <h2>🧠 Models Utilized</h2>
-        <ul>
-            <li>VGG19</li>
-            <li>ResNet50</li>
-            <li>DenseNet201</li>
-            <li>EfficientNetB4</li>
-        </ul>
-    </div>
-    <div class="setup">
-        <h2>🛠 Setup and Installation</h2>
-        <code>git clone https://github.com/yourgithubusername/Lung-Cancer-Classification-Deep-Learning.git</code><br>
-        <code>cd Lung-Cancer-Classification-Deep-Learning</code><br>
-        <code>pip install -r requirements.txt</code>
-    </div>
-    <div class="data">
-        <h2>📊 Data</h2>
-        <p>The data consists of labeled CT scan images categorized into four classes: Normal, Squamous Cell Carcinoma, Adenocarcinoma, and Large Cell Carcinoma.</p>
-    </div>
-    <div class="findings">
-        <h2>🔍 Main Findings</h2>
-        <p>The application of deep learning models enhances the accuracy of lung cancer classification significantly compared to traditional methods.</p>
-    </div>
-    <div class="technologies">
-        <h2>🛠 Technologies Used</h2>
-        <ul>
-            <li>Python</li>
-            <li>TensorFlow and Keras</li>
-            <li>NumPy, Pandas</li>
-            <li>Matplotlib, Seaborn</li>
-        </ul>
-    </div>
-    <div class="predictions">
-        <h2>📈 Example Predictions</h2>
-        <p>The repository includes examples of predictions made by the models, illustrating their capability to accurately classify lung cancer types from CT scans.</p>
-    </div>
-    <div class="contribute">
-        <h2>🌟 How to Contribute</h2>
-        <p>Contributions are welcome! Please feel free to fork the repository, add features, and submit pull requests.</p>
-    </div>
-    <div class="license">
-        <h2>📝 License</h2>
-        <p>Distributed under the MIT License. See <a href="LICENSE">LICENSE</a> for more information.</p>
-    </div>
-    <div class="contact">
-        <h2>📩 Contact</h2>
-        <p>For any inquiries, please open an issue or contact us directly through GitHub.</p>
-    </div>
-</div>
-</body>
-</html>
+# Lung Cancer Classification using Deep Learning
+
+## 🚀 Project Overview
+Welcome to the Lung Cancer Classification project using Deep Learning. This repository is dedicated to developing robust deep learning models to classify CT scan images into various types of lung cancer. Utilizing state-of-the-art convolutional neural networks (CNNs), this project aims to improve the accuracy of early lung cancer detection, which is critical for effective treatment and patient outcomes.
+
+## 🧠 Models Utilized
+In this project, we explore several advanced CNN architectures known for their efficacy in image classification tasks:
+- **VGG19**: Known for its simplicity and depth, which is effective in capturing intricate patterns in image data.
+- **ResNet50**: Utilizes residual connections to enable training of deeper neural network architectures without performance degradation.
+- **DenseNet201**: Features dense connections between layers to enhance feature propagation and reuse, making it highly efficient.
+- **EfficientNetB4**: Balances model scaling across depth, width, and resolution, leading to improved efficiency and accuracy.
+
+## 🛠 Setup and Installation
+To replicate this project or contribute to its development, start by setting up your local environment:
+```bash
+# Clone the repository
+git clone https://github.com/yourgithubusername/Lung-Cancer-Classification-Deep-Learning.git
+
+# Navigate to the project directory
+cd Lung-Cancer-Classification-Deep-Learning
+
+# Install the required dependencies
+pip install -r requirements.txt
+
+## 📊 Data Description
+The dataset consists of CT scans labeled into the following categories, which represent different types of lung cancer and normal conditions:
+- Normal
+- Squamous Cell Carcinoma
+- Adenocarcinoma
+- Large Cell Carcinoma
+
+The data is preprocessed to align image sizes and augment the dataset to ensure robustness and generalizability of the models.
+
+## 🔍 Main Findings
+The deep learning models trained on this dataset have shown promising results in classifying CT scans with high accuracy, suggesting that such models can significantly aid in early lung cancer detection.
+
+Comparison among different models revealed varying strengths, with some models performing better on specific types of cancer due to their architectural nuances.
+
+## 🛠 Technologies Used
+This project employs various technologies and libraries, primarily focused on Python for data science and machine learning:
+- **TensorFlow and Keras**: For designing, training, and evaluating deep learning models.
+- **NumPy and Pandas**: For efficient data manipulation and analysis.
+- **Matplotlib and Seaborn**: For visualizing data and model performance metrics.
+
+## 📈 Example Predictions
+The notebooks within this repository provide visualization of predictions made by each model, demonstrating their performance and the effectiveness of the applied machine learning techniques.
+
+## 🌟 How to Contribute
+We encourage contributions from the community, whether it's adding new features, enhancing existing models, or improving documentation:
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -am 'Add some YourFeature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Create a new Pull Request.
+
+## 📝 License
+This project is released under the MIT License, which allows for open and reproducible scientific research.
+
+## 📩 Contact
+If you have any feedback, questions, or would like to discuss the project further, please reach out through GitHub issues or contact the maintainers directly via email.
+
