@@ -10,12 +10,6 @@ In this project, we explore several advanced CNN architectures known for their e
 - **DenseNet201**: Features dense connections between layers to enhance feature propagation and reuse, making it highly efficient.
 - **EfficientNetB4**: Balances model scaling across depth, width, and resolution, leading to improved efficiency and accuracy.
 
-# Navigate to the project directory
-cd Lung-Cancer-Classification-Deep-Learning
-
-# Install the required dependencies
-pip install -r requirements.txt
-
 ## 📊 Data Description
 The dataset consists of CT scans labeled into the following categories, which represent different types of lung cancer and normal conditions:
 - Normal
@@ -26,15 +20,18 @@ The dataset consists of CT scans labeled into the following categories, which re
 The data is preprocessed to align image sizes and augment the dataset to ensure robustness and generalizability of the models.
 
 ## 🔍 Main Findings
-The deep learning models trained on this dataset have shown promising results in classifying CT scans with high accuracy, suggesting that such models can significantly aid in early lung cancer detection.
-
-Comparison among different models revealed varying strengths, with some models performing better on specific types of cancer due to their architectural nuances.
+- **Model Performance**: Each model was rigorously trained and evaluated. Here are the key performance metrics:
+  - **VGG19**: Achieved an accuracy of 89.52% on the test set.
+  - **ResNet50**: Reached a test accuracy of 72.22%, demonstrating strong generalization.
+  - **DenseNet201**: The best-performing model with a test accuracy of 93.33%.
+  - **EfficientNetB4**: Performed with an accuracy of 68.75% on the test set.
+- **Best Model**: DenseNet201 was finalized as the best model due to its superior accuracy and efficiency in handling complex image classifications.
 
 ## 🛠 Technologies Used
 This project employs various technologies and libraries, primarily focused on Python for data science and machine learning:
-- **TensorFlow and Keras**: For designing, training, and evaluating deep learning models.
-- **NumPy and Pandas**: For efficient data manipulation and analysis.
-- **Matplotlib and Seaborn**: For visualizing data and model performance metrics.
+- **TensorFlow** and **Keras**: For designing, training, and evaluating deep learning models.
+- **NumPy** and **Pandas**: For efficient data manipulation and analysis.
+- **Matplotlib** and **Seaborn**: For visualizing data and model performance metrics.
 
 ## 📈 Example Predictions
 The notebooks within this repository provide visualization of predictions made by each model, demonstrating their performance and the effectiveness of the applied machine learning techniques.
@@ -47,17 +44,11 @@ We encourage contributions from the community, whether it's adding new features,
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Create a new Pull Request.
 
-## 🛠 Setup and Installation
-To replicate this project or contribute to its development, start by setting up your local environment:
-```bash
-# Clone the repository
-git clone https://github.com/yourgithubusername/Lung-Cancer-Classification-Deep-Learning.git
-
-
-
 ## 📝 License
 This project is released under the MIT License, which allows for open and reproducible scientific research.
 
 ## 📩 Contact
 If you have any feedback, questions, or would like to discuss the project further, please reach out through GitHub issues or contact the maintainers directly via email.
 
+---
+*Note: This project is intended for educational and research purposes in the field of medical image analysis using deep learning.*
