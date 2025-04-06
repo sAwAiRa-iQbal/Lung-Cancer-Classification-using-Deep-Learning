@@ -41,18 +41,11 @@ In this project, we explore several advanced CNN architectures known for their e
 ## 🔍Final Model
 From results we can see that using both models **argmax(ResNet + DenseNet)** is more accurate rather than using only one of them
 
-## 📈 Example Predictions and Model Accuracy
+## 📈  Model Accuracy Across Different Architectures
+Below is the accuracy comparison across different CNN architectures used in our project:
 
-### Model Accurac
-Below is the accuracy comparison across different Algos used in our project:
-
-![Model Accuracy](011.png)  <!-- Replace URL_TO_IMAGE_2222.png with the actual URL of the uploaded image -->
-
-### Prediction Example
-Here is an example of a prediction made by our model:
-
-![Prediction Example](URL_TO_IMAGE_111.png)  <!-- Replace URL_TO_IMAGE_111.png with the actual URL of the uploaded image -->
-
+![Model Accuracy](https://github.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/blob/main/images/011.png)
+![Model Accuracy visual](https://github.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/blob/main/images/111.png)
 
 
 ## 🛠 Technologies Used
@@ -62,5 +55,7 @@ This project employs various technologies and libraries, primarily focused on Py
 - **Matplotlib** and **Seaborn**: For visualizing data and model performance metrics.
 
 ## 📈 Example Predictions
-The notebooks within this repository provide visualization of predictions made by each model, demonstrating their performance and the effectiveness of the applied Deep learning techniques.
+using final model
+
+![Prediction Example](https://github.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/blob/main/images/2222.png)
 
