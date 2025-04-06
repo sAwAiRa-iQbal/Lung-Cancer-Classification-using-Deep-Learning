@@ -3,7 +3,11 @@
 ## 🚀 Project Overview
 Welcome to the Lung Cancer Classification project using Deep Learning. This repository is dedicated to developing robust deep learning models to classify CT scan images into various types of lung cancer. Utilizing state-of-the-art convolutional neural networks (CNNs), this project aims to improve the accuracy of early lung cancer detection, which is critical for effective treatment and patient outcomes.
 
-# **What I am Doing in this project:** 🔍
+# Dataset is Here 💾
+Download the dataset used in this project [here](https://drive.google.com/drive/folders/1RjUSl89X488w-PQCmQrzP4qs_H1dfmav?usp=drive_link).
+
+
+## **What I am Doing in this project:** 🔍
 
 - Build Model Architecture
 - Apply Almost 5 to 6 Models(ResNet50,VGG16,ResNet101, VGG19, DenseNet201, EfficientNetB4, MobileNetV2) using Transfer Learning🧠
