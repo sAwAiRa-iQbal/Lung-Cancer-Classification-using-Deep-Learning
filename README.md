@@ -45,7 +45,7 @@ From results we can see that using both models **argmax(ResNet + DenseNet)** is 
 Below is the accuracy comparison across different CNN architectures used in our project:
 
 ![Model Accuracy](https://raw.githubusercontent.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/main/011.png)
-![Model Accuracy visual](https://github.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/blob/main/images/111.png)
+![Model Accuracy visual](https://raw.githubusercontent.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/main/111.png)
 
 
 ## 🛠 Technologies Used
@@ -57,5 +57,5 @@ This project employs various technologies and libraries, primarily focused on Py
 ## 📈 Example Predictions
 using final model
 
-![Prediction Example](https://github.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/blob/main/images/2222.png)
+![Prediction Example](https://raw.githubusercontent.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/main/2222.png)
 
