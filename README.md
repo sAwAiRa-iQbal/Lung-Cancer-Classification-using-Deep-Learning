@@ -13,7 +13,7 @@ The dataset consists of CT scans labeled into the following categories, which re
 The data is preprocessed to align image sizes and augment the dataset to ensure robustness and generalizability of the models.
 
  # Data Preparation
- using the shuffle function to randomly shuffle the order of my training data to ensure that the model does not learn patterns based on the order of the data. dataset have training, testing, validation folders. dataset is frm kaggle                  
+ using the shuffle function to randomly shuffle the order of my training data to ensure that the model does not learn patterns based on the order of the data. dataset have training, testing, validation folders. dataset is from kaggle                  
  
  # **Building a Model Architecture**🚀                 
  This model architecture is a Convolutional Neural Network (CNN) designed for image classification, utilizing the TensorFlow Keras library. The model begins with an input layer that accepts images of shape (305, 430, 3). It then processes these images through a series of convolutional and pooling layers. The first convolutional layer has 8 filters with a 2x2 kernel, followed by a max-pooling layer with a 2x2 pool size. The second convolutional layer increases the filter count to 16, also with a 2x2 kernel and includes L2 regularization to prevent overfitting, followed by another max-pooling layer. A dropout layer with a 0.4 rate is included to further mitigate overfitting. The output from these layers is flattened into a 1D vector, which is fed into a dense layer with 300 units and ReLU activation. Another dropout layer with a 0.5 rate is applied before the final output layer, which has 4 units corresponding to the number of classes, with softmax activation for multi-class classification.
@@ -41,10 +41,14 @@ In this project, we explore several advanced CNN architectures known for their e
 ## 🔍Final Model
 From results we can see that using both models **argmax(ResNet + DenseNet)** is more accurate rather than using only one of them
 
-## 📈  Model Accuracy Across Different Architectures
-Below is the accuracy comparison across different CNN architectures used in our project:
+## 📈  Model Accuracy 
+Below is the accuracy using Dataset images classes:
 
-![Model Accuracy](https://raw.githubusercontent.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/main/011.png)
+![Model Accuracy](https://raw.githubusercontent.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/main/011.png)        \n
+
+
+
+
 ![Model Accuracy visual](https://raw.githubusercontent.com/sAwAiRa-iQbal/Lung-Cancer-Classification-using-Deep-Learning/main/111.png)
 
 
