@@ -3,13 +3,6 @@
 ## 🚀 Project Overview
 Welcome to the Lung Cancer Classification project using Deep Learning. This repository is dedicated to developing robust deep learning models to classify CT scan images into various types of lung cancer. Utilizing state-of-the-art convolutional neural networks (CNNs), this project aims to improve the accuracy of early lung cancer detection, which is critical for effective treatment and patient outcomes.
 
-## 🧠 Models Utilized
-In this project, we explore several advanced CNN architectures known for their efficacy in image classification tasks:
-- **VGG19**: Known for its simplicity and depth, which is effective in capturing intricate patterns in image data.
-- **ResNet50**: Utilizes residual connections to enable training of deeper neural network architectures without performance degradation.
-- **DenseNet201**: Features dense connections between layers to enhance feature propagation and reuse, making it highly efficient.
-- **EfficientNetB4**: Balances model scaling across depth, width, and resolution, leading to improved efficiency and accuracy.
-
 ## 📊 Data Description
 The dataset consists of CT scans labeled into the following categories, which represent different types of lung cancer and normal conditions:
 - Normal
@@ -19,13 +12,48 @@ The dataset consists of CT scans labeled into the following categories, which re
 
 The data is preprocessed to align image sizes and augment the dataset to ensure robustness and generalizability of the models.
 
-## 🔍 Main Findings
-- **Model Performance**: Each model was rigorously trained and evaluated. Here are the key performance metrics:
-  - **VGG19**: Achieved an accuracy of 89.52% on the test set.
-  - **ResNet50**: Reached a test accuracy of 72.22%, demonstrating strong generalization.
-  - **DenseNet201**: The best-performing model with a test accuracy of 93.33%.
-  - **EfficientNetB4**: Performed with an accuracy of 68.75% on the test set.
-- **Best Model**: DenseNet201 was finalized as the best model due to its superior accuracy and efficiency in handling complex image classifications.
+ # Data Preparation
+ using the shuffle function to randomly shuffle the order of my training data to ensure that the model does not learn patterns based on the order of the data. dataset have training, testing, validation folders. dataset is frm kaggle                  
+ 
+ # **Building a Model Architecture**🚀                 
+ This model architecture is a Convolutional Neural Network (CNN) designed for image classification, utilizing the TensorFlow Keras library. The model begins with an input layer that accepts images of shape (305, 430, 3). It then processes these images through a series of convolutional and pooling layers. The first convolutional layer has 8 filters with a 2x2 kernel, followed by a max-pooling layer with a 2x2 pool size. The second convolutional layer increases the filter count to 16, also with a 2x2 kernel and includes L2 regularization to prevent overfitting, followed by another max-pooling layer. A dropout layer with a 0.4 rate is included to further mitigate overfitting. The output from these layers is flattened into a 1D vector, which is fed into a dense layer with 300 units and ReLU activation. Another dropout layer with a 0.5 rate is applied before the final output layer, which has 4 units corresponding to the number of classes, with softmax activation for multi-class classification.
+ 
+## 🧠 Models Utilized for Transfer Laerning
+In this project, we explore several advanced CNN architectures known for their efficacy in image classification tasks:
+- **VGG19**: Known for its simplicity and depth, which is effective in capturing intricate patterns in image data.
+- **ResNet50**: Utilizes residual connections to enable training of deeper neural network architectures without performance degradation.
+- **DenseNet201**: Features dense connections between layers to enhance feature propagation and reuse, making it highly efficient.
+- **EfficientNetB4**: Balances model scaling across depth, width, and resolution, leading to improved efficiency and accuracy.
+
+# The Most three promised models are: 🌟
+* ResNet50 **86% accuray on test data** 📉
+* DenseNet201 **88% on test data** 📊
+* EfficientNetB4 **90% on test data** 📈
+
+# **Let's Play with HyperParameter Tuning** 🎛️
+
+# Final Models are: After Fine Tuning ✨
+* **ResNet50** with **train 99.5 🟢 validation 89 🟡 test 91.7 🔵**
+* **DenseNet201** with **train 100 🟢 validation 94.5 🟢 test 90 🟡**
+* **EfficientNetB4** with **train 99 🟢 validation 94.5 🟢 test 89.5 🟡**
+
+
+## 🔍Final Model
+From results we can see that using both models **argmax(ResNet + DenseNet)** is more accurate rather than using only one of them
+
+## 📈 Example Predictions and Model Accuracy
+
+### Model Accurac
+Below is the accuracy comparison across different Algos used in our project:
+
+![Model Accuracy](011.png)  <!-- Replace URL_TO_IMAGE_2222.png with the actual URL of the uploaded image -->
+
+### Prediction Example
+Here is an example of a prediction made by our model:
+
+![Prediction Example](URL_TO_IMAGE_111.png)  <!-- Replace URL_TO_IMAGE_111.png with the actual URL of the uploaded image -->
+
+
 
 ## 🛠 Technologies Used
 This project employs various technologies and libraries, primarily focused on Python for data science and machine learning:
@@ -34,21 +62,5 @@ This project employs various technologies and libraries, primarily focused on Py
 - **Matplotlib** and **Seaborn**: For visualizing data and model performance metrics.
 
 ## 📈 Example Predictions
-The notebooks within this repository provide visualization of predictions made by each model, demonstrating their performance and the effectiveness of the applied machine learning techniques.
+The notebooks within this repository provide visualization of predictions made by each model, demonstrating their performance and the effectiveness of the applied Deep learning techniques.
 
-## 🌟 How to Contribute
-We encourage contributions from the community, whether it's adding new features, enhancing existing models, or improving documentation:
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -am 'Add some YourFeature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Create a new Pull Request.
-
-## 📝 License
-This project is released under the MIT License, which allows for open and reproducible scientific research.
-
-## 📩 Contact
-If you have any feedback, questions, or would like to discuss the project further, please reach out through GitHub issues or contact the maintainers directly via email.
-
----
-*Note: This project is intended for educational and research purposes in the field of medical image analysis using deep learning.*
